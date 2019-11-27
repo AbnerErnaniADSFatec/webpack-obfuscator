@@ -4,8 +4,8 @@ const JavaScriptObfuscator = require('../../dist/index');
 
 module.exports = {
     entry: {
-        'index': './test/input/index.js',
-        'index-excluded': './test/input/index-excluded.js'
+        'routes': '../api/routes.js',
+        'server': '../api/server.js'
     },
     devtool: 'source-map',
     target: 'web',
@@ -15,10 +15,10 @@ module.exports = {
     plugins: [
         new JavaScriptObfuscator({
             disableConsoleOutput: false
-        }, ['index-excluded*'])
+        }, ['server*'])
     ],
     output: {
-        path: __dirname + '/../output',
+        path: __dirname + '../output',
         filename: '[name].js'
     }
 };
