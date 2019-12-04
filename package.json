@@ -25,6 +25,7 @@
         "axios": "^0.19.0",
         "cors": "^2.8.5",
         "express": "^4.17.1",
+        "fs": "0.0.1-security",
         "javascript-obfuscator": "^0.18.4",
         "multi-stage-sourcemap": "^0.2.1",
         "multimatch": "^2.1.0",
@@ -39,6 +40,7 @@
         "@types/node": "8.0.47",
         "@types/webpack": "^4.4.34",
         "@types/webpack-sources": "^0.1.5",
+        "json-loader": "^0.5.7",
         "source-map": "^0.6.1",
         "typescript": "^3.7.2",
         "webpack": "^4.3.0",
@@ -53,10 +55,11 @@
         "build": "npx tsc",
         "watch": "npx tsc -w",
         "test": "npx webpack --config test/config/webpack.config.js",
-        "server": "nodemon src/api/server.js",
-        "obfuscate": "node src/index.js",
-        "ts-compiler": "tsc --target ES6 src/index.ts",
-        "up": "node src/index.js && nodemon src/output/server.js"
+        "server": "nodemon test/input/src/api/server.js",
+        "server-test": "nodemon test/output/index.js",
+        "obfuscate": "node index.js",
+        "ts-compiler": "tsc --target ES6 index.ts",
+        "up": "node src/index.js && nodemon output/server.js"
     },
     "author": {
         "name": "Timofey Kachalov"
