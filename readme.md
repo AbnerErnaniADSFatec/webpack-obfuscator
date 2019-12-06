@@ -76,7 +76,7 @@ $ npx javascript-obfuscator main.js -o main.obf.js
 $ yarn build-app
 ```
 
-### Run obfuscate code in ```output/app```
+### Run obfuscated code in ```output/app```
 ```
 $ npm install && yarn run-api
 ```
