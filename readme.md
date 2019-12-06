@@ -66,6 +66,16 @@ module.exports = {
 
 Can be used to bypass obfuscation of some files.
 
+### Use test for sample codes in JavaScript
+```
+$ npx javascript-obfuscator main.js -o main.obf.js
+```
+
+### Or use  yarn in this project
+```
+$ yarn build-app
+```
+
 ### License
 Copyright (C) 2017 [Timofey Kachalov](http://github.com/sanex3339).
 

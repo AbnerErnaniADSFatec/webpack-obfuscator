@@ -59,7 +59,9 @@
         "server-test": "nodemon test/output/index.js",
         "obfuscate": "node index.js",
         "ts-compiler": "tsc --target ES6 index.ts",
-        "up": "node src/index.js && nodemon output/server.js"
+        "up": "node src/index.js && nodemon output/server.js",
+        "run-api" : "nodemon server.js",
+        "build-app": "mkdir output && mkdir output/app && npx javascript-obfuscator test/input/src/api/server.js -o output/app/server.js && npx javascript-obfuscator test/input/src/api/routes.js -o output/app/routes.js && cp package.json output/app/ && cp package-lock.json output/app/"
     },
     "author": {
         "name": "Timofey Kachalov"
