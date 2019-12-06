@@ -76,6 +76,11 @@ $ npx javascript-obfuscator main.js -o main.obf.js
 $ yarn build-app
 ```
 
+### Run obfuscate code in ```output/app```
+```
+$ npm install && yarn run-api
+```
+
 ### License
 Copyright (C) 2017 [Timofey Kachalov](http://github.com/sanex3339).
 
